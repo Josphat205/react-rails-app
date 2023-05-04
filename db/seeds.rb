@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+greeting = Greeting.create(
+    puts "Creating Greeting"
+    5.times.map { message: Faker::Lorem.sentence } 
+    )
