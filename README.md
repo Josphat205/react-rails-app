@@ -64,17 +64,6 @@ This project was build using Ruby on Rails
   </ul>
 </details>
 
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-> Features in this project
-
-- **[Users Section]**
-- **[Category section]**
-- **[Transaction section]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
