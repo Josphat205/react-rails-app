@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setMessages } from "../features/messageSlice";
 import axios from "axios";
 const Greetings = () => {
-  const [data, setData] = useState({}); // 1
-  const fetchData = async () => {
-    const result = await axios.get("http://localhost:3000/greetings");
-    setData(result.data);
+  const dispatch = useDispatch();
+
+  const fetchGreetings = async () => {
+    await axios
+      .get("http://localhost:3000/greetings")
+      .then(res => {
+        dispatch(setMessages(res.data));
+      })
+      .catch(err => console.log(err));
   };
-  console.log(data);
+
   useEffect(() => {
-    fetchData();
+    fetchGreetings();
   }, []);
+  const messages = useSelector(state => state.messages.messages);
   return (
     <div>
       <h1>Greetings</h1>
       <p>
-        {data.message} posted on {data.created_at}
+        {messages.message} posted on {messages.created_at}
       </p>
     </div>
   );
