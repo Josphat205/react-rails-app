@@ -33,7 +33,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Budget Manager] <a name="about-project"></a>
+# 📖 [Message-app] <a name="about-project"></a>
 
 **[Hello-react-message-app]** Message app is used to generate random messages!
 
@@ -115,7 +115,6 @@ To run the project, execute the following command:
   rails server
 ```
 
-
 ### Deployment
 
 You can deploy this project using:
@@ -137,7 +136,6 @@ Example:
 - GitHub: [@github](https://github.com/Josphat205)
 - Twitter: [@twitter](https://twitter.com/josphatloman)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/josphat205)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
